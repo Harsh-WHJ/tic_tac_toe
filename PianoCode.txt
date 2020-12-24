@@ -1,0 +1,67 @@
+var rectC=createSprite(45,215,50,150);
+rectC.visible=false;
+var rectD=createSprite(95,215,50,150);
+rectD.visible=false;
+var rectE=createSprite(145,215,50,150);
+rectE.visible=false;
+var rectF=createSprite(195,215,50,150);
+rectF.visible=false;
+var rectG=createSprite(245,215,50,150);
+rectG.visible=false;
+var rectA=createSprite(295,215,50,150);
+rectA.visible=false;
+var rectB=createSprite(345,215,50,150);
+rectB.visible=false;
+var rectC1=createSprite(70,185,40,90);
+rectC1.visible=false;
+var rectD1=createSprite(120,185,40,90);
+rectD1.visible=false;
+var rectF1=createSprite(220,185,40,90);
+rectF1.visible=false;
+var rectG1=createSprite(270,185,40,90);
+rectG1.visible=false;
+var rectA1=createSprite(320,185,40,90);
+rectA1.visible=false;
+
+function draw() {
+background("red");
+fill("white");
+rect(20,140,50,150);
+fill ("white");
+rect(70,140,50,150);
+fill ("white");
+rect(120,140,50,150);
+fill ("white");
+rect(170,140,50,150);
+fill ("white");
+rect(220,140,50,150);
+fill ("white");
+rect(270,140,50,150);
+fill ("white");
+rect(320,140,50,150);
+if (mousePressedOver(rectC)) {
+playSound("piano_middle_C.mp3");
+}
+if (mousePressedOver(rectD)) {
+playSound("piano_D.mp3");
+}
+if (mousePressedOver(rectE)) {
+playSound("piano_E.mp3");
+}
+if (mousePressedOver(rectF)) {
+playSound("piano_F.mp3");
+}
+if (mousePressedOver(rectG)) {
+playSound("piano_G.mp3");
+}
+if (mousePressedOver(rectA)) {
+playSound("piano_A.mp3");
+}
+if (mousePressedOver(rectB)) {
+playSound("piano_B.mp3");
+}
+
+
+
+drawSprites();
+}
